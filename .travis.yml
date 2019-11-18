@@ -3,6 +3,12 @@ jdk :
    -openjdk8
 script: ./mvnw clean install
 
+jobs: 
+   include:
+     - stage : test
+       script : ./mvnw clean test
+
+
 notifications:
     email: ashish.yete@gmail.com
 before_install:
