@@ -5,3 +5,5 @@ script: ./mvnw clean install
 
 notifications:
     email: ashish.yete@gmail.com
+before_install:
+  - chmod +x mvnw
